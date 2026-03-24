@@ -74,7 +74,9 @@ Alternatively, when specified in the configs, it can also read a .csv file on th
 
 
 ### Reproduction of the dataset of RMSF labels from the ATLAS dataset:
-**Update: Please note that ATLAS has switched to reporting RMSF in Angstroms, before it was nanometers, so Flexpert is trained in nanometers and its raw outputs correspond to nanometers.**
+
+**Update 03/24/26: Please note that ATLAS has switched to reporting RMSF in Angstroms. Before it was nanometers, so Flexpert is trained in nanometers and its raw outputs correspond to nanometers.** (Thanks to Eric Jeanbourquin for catching the discrepancy!)
+
 This can take few hours and a significant disc space, as it calls the ATLAS dataset API, downloads the data (including the MD simulations), unzips the data and stores it. It is not necessary to run it for the reproduction as we already provide the preprocessed ATLAS in the repo. If you are building your own dataset, this might be irrelevant, unless your proteins of interest are included in the ATLAS dataset.
 
 To download ATLAS dataset (in order to obtain the RMSF labels for the training), run the following command:
